@@ -2,6 +2,7 @@
 title: "01-Foundations of Data Mining"
 category: "data-mining"
 date: "12-23-2025"
+background_image: "/chapter-1/11.png"
 ---
 # foundations of Data Mining
 ## 01-Data Mining – The Art of Discovering Knowledge

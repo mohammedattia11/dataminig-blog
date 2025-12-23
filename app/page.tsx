@@ -13,7 +13,7 @@ export default function Home() {
           articles.map(article => (
             <GlassBlogCard
               id={article.id}
-              image="/chapter-1/11.png"
+              image={article.backgroundImage}
               key={article.id}
               title={article.title}
             />

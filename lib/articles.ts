@@ -23,6 +23,7 @@ export function getSortedArticles():ArticleType[] {
       title:matterResults.data.title,
       date:matterResults.data.date,
       category:matterResults.data.category,
+      backgroundImage:matterResults.data.background_image,
       data: fileContents,
     }
   })

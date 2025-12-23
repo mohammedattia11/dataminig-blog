@@ -1,3 +1,4 @@
+import ArticleItemList from "@/components/article-item-list";
 import { getCategorizedArticles } from "@/lib/articles";
 
 export default function Home() {
@@ -7,6 +8,8 @@ export default function Home() {
     <header className="font-cormorant-garamond font-light text-6xl text-neutral-900 text-center">
       <h1>Data mining blog</h1>
     </header>
-    <section className="md:grid md:grid-cols-2 flex flex-col gap-10"></section>
+    <section className="md:grid md:grid-cols-2 flex flex-col gap-10">
+      {articles !== null && Object.keys(articles).map(article => <ArticleItemList key={article} category={article} articles={articles[article]} />)}
+    </section>
   </section>;
 }

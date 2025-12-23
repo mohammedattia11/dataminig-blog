@@ -48,3 +48,23 @@ export function getCategorizedArticles() : Record<string,ArticleType[]> {
   })
   return categorizedArticles;
 }
+
+export async function getArticlesData(id:string) {
+  const fullPath = path.join(articlesDirectory,`${id}.md`);
+
+  const fileContents = fs.readFileSync(fullPath,"utf-8");
+
+  const matterResult = matter(fileContents);
+
+  const processedContent = await remark().use(html).process(matterResult.content)
+
+  const htmlContent = processedContent.toString();
+
+  return {
+    id,
+    htmlContent,
+    title:matterResult.data.title,
+    category:matterResult.data.category,
+    date:moment(matterResult.data.date,"DD-MM-YYYY").format("MMMM Do YYYY")
+  }
+}

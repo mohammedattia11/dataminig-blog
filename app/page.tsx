@@ -16,6 +16,7 @@ export default function Home() {
               image={article.backgroundImage}
               key={article.id}
               title={article.title}
+              tags={article.tags}
             />
           ))}
       </section>

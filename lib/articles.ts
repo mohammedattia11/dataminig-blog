@@ -24,6 +24,7 @@ export function getSortedArticles():ArticleType[] {
       date:matterResults.data.date,
       category:matterResults.data.category,
       backgroundImage:matterResults.data.background_image,
+      tags:matterResults.data.tags,
       data: fileContents,
     }
   })

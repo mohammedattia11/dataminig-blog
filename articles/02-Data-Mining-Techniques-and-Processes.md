@@ -3,6 +3,7 @@ title: "02-Data Mining Techniques and Processes"
 category: "data-mining"
 date: "12-23-2025"
 background_image: "/chapter-2/13.png"
+tags: ["Data Mining"]
 ---
 # 02-Data Mining Techniques and Processes
 ## 2.1-Introduction to Data Mining 

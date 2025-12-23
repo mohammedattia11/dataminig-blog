@@ -4,4 +4,5 @@ export type ArticleType = {
   data:string 
   category:string
   backgroundImage:string
+  tags:string[]
 }

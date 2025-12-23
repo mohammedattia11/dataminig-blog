@@ -1,8 +1,8 @@
 import { ThemeProvider } from "@/components/theme-provider";
+import LenisProvider from "@/providers/lenis-provider";
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
-import LenisProvider from "@/providers/lenis-provider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,32 +31,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfair.variable} ${poppins.variable} antialiased `}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="min-h-screen w-full relative bg-black">
-            <div
-              className="absolute inset-0 z-0 fixed"
-              style={{
-                background: `
+        <div className="min-h-screen w-full relative bg-black overflow-y-scroll">
+          <div
+            className="absolute inset-0 z-0 fixed"
+            style={{
+              background: `
                       radial-gradient(ellipse 120% 80% at 70% 20%, rgba(255, 20, 147, 0.15), transparent 50%),
                       radial-gradient(ellipse 100% 60% at 30% 10%, rgba(0, 255, 255, 0.12), transparent 60%),
                       radial-gradient(ellipse 90% 70% at 50% 0%, rgba(138, 43, 226, 0.18), transparent 65%),
                       radial-gradient(ellipse 110% 50% at 80% 30%, rgba(255, 215, 0, 0.08), transparent 40%),
                       #000000
                     `,
-              }}
-            />
-            <main className="relative z-10">
-              <LenisProvider>
-                {children}
-              </LenisProvider>
-            </main>
-          </div>
-        </ThemeProvider>
+            }}
+          />
+          <main className="relative z-10">
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <LenisProvider>{children}</LenisProvider>
+            </ThemeProvider>
+          </main>
+        </div>
       </body>
     </html>
   );

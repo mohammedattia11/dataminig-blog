@@ -8,7 +8,7 @@ import type { ArticleType } from "@/types"
 
 const articlesDirectory = path.join(process.cwd(),"articles")
 
-function getSortedArticles():ArticleType[] {
+export function getSortedArticles():ArticleType[] {
   const filenames = fs.readdirSync(articlesDirectory);
   const allArticlesData = filenames.map(filename => {
     const id = filename.replace(/\.md$/,"");
@@ -34,19 +34,6 @@ function getSortedArticles():ArticleType[] {
     else if(dateTwo.isAfter(dateOne)) return 1;
     else return 0;
   })
-}
-
-export function getCategorizedArticles() : Record<string,ArticleType[]> {
-  const sortedArticles = getSortedArticles();
-  const categorizedArticles:Record<string,ArticleType[]> = {};
-
-  sortedArticles.forEach(article => {
-    if (!categorizedArticles[article.category]) {
-      categorizedArticles[article.category] = [];
-    }
-    categorizedArticles[article.category].push(article);
-  })
-  return categorizedArticles;
 }
 
 export async function getArticleData(id:string) {

@@ -2,19 +2,16 @@ import { ArticleType } from "@/types";
 import Link from "next/link";
 
 type Props = {
-  category:string;
-  articles:ArticleType[]
+  title:string,
+  id:string
 }
-export default function ArticleItemList({category,articles}:Props) {
+export default function ArticleItemList({title,id}:Props) {
   return (
     <div className="flex flex-col gap-5">
-      <h2 className="font-cormorant-garamond text-4xl">{category}</h2>
       <div className="flex flex-col gap-2.5 font-poppins text-xl">
-        {articles.map(article => (
-          <Link href={`/${article.id}`} key={article.id} className="text-neutral-900 hover:text-amber-700 transition duration-150">
-            {article.title}
+        <Link href={`/${id}`} key={id} className=" hover:text-amber-700 transition duration-150">
+            {title}
           </Link>
-        ))}
       </div>
     </div>
   )

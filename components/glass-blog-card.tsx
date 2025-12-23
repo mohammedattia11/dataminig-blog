@@ -86,7 +86,7 @@ export function GlassBlogCard({
               className="flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/25"
             >
               <BookOpen className="h-4 w-4" />
-              <Link href={`/${id}`}>Read Article</Link>
+              <Link href={`/${id}`}>Read Chapter</Link>
             </motion.button>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
+import LenisProvider from "@/providers/lenis-provider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -49,7 +50,11 @@ export default function RootLayout({
                     `,
               }}
             />
-            <main className="relative z-10">{children}</main>
+            <main className="relative z-10">
+              <LenisProvider>
+                {children}
+              </LenisProvider>
+            </main>
           </div>
         </ThemeProvider>
       </body>

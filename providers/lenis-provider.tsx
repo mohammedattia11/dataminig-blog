@@ -12,6 +12,7 @@ export default function LenisProvider({ children }: Props) {
     const lenis = new Lenis({
       smoothWheel: true,
       lerp: 0.1,
+      wheelMultiplier: 2.5
     });
 
     function raf(time: number) {

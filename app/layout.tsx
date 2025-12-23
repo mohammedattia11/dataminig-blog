@@ -3,6 +3,7 @@ import LenisProvider from "@/providers/lenis-provider";
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
+import TubeLightNavbar from "@/components/navbar";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -51,6 +52,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
+              <TubeLightNavbar/>
               <LenisProvider>{children}</LenisProvider>
             </ThemeProvider>
           </main>

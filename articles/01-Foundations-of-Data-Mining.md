@@ -3,15 +3,7 @@ title: "01-Foundations of Data Mining"
 category: "data-mining"
 date: "12-23-2025"
 ---
-# 01-Foundations of Data Mining
-- **Data Mining: discovering**
-	- hidden patterns 
-	- correlations
-	- knowledge from large datasets
-- **ML:**
-	- build predictive models that improves it's performance with experience
-- **DL:**
-	- subset of Ml employs multi layered neural networks automatically extract hierarchical representations from complex data
+# foundations of Data Mining
 ## 01-Data Mining – The Art of Discovering Knowledge
 
 ### 1.1-Definition and Purpose
@@ -55,7 +47,7 @@ Statistical approaches, which focus on testing hypotheses but data mining emphas
 
 Data mining has applications in retail, healthcare, finance, and social Network analysis.
 
-![[Pasted image 20251222205125.png]]
+![image](/chapter-1/1.png)
 ## 02-Machine Learning – From Data to Prediction
 
 ### 2.1-Definition 
@@ -93,7 +85,7 @@ $m \to$ slope
 $b$ -> intercept (where the line starts on the y-axis.)
 $x$ -> input
 
-![test](/regression.png)
+![iamge](/chapter-1/2.png)
 ## 03-Deep Learning – The Neural Revolution
 
 ### 3.1-Definition 
@@ -115,7 +107,7 @@ $x$ -> input
 		- `CSV` files with fixed columns
 ### 3.2-Theoretical Background
 
-![[Pasted image 20251222212958.png]]
+![iamge](/chapter-1/3.png)
 
 - **Neuron Model:** Each neuron computes a weighted sum of inputs and applies an *activation function*.
 - **Activation Functions:** mathematical function in a neural network that decides whether a neuron should be activated (pass information forward) or not (`ReLU`, `sigmoid`).
@@ -127,7 +119,7 @@ $x$ -> input
 
 ### 3.3-Simple Neural Network
 
-![[Pasted image 20251222213025.png]]
+![iamge](/chapter-1/4.png)
 
 applied to a binary classification problem, such as predicting whether a customer will purchase a product.
 ### 3.4-Applications of Deep Learning
@@ -138,7 +130,7 @@ applied to a binary classification problem, such as predicting whether a custome
 - **Autonomous systems:** Self-driving cars, robotics, and drones.
 ## 04- Data Mining vs ML vs DL
 
-![[Pasted image 20251222213524.png]]
+![iamge](/chapter-1/5.png)
 
 - data mining extracts patterns and insights
 - ML predicts outcomes 
@@ -147,7 +139,7 @@ applied to a binary classification problem, such as predicting whether a custome
 
 we combine 3 of them for creating a powerful workflow for our systems data 
 
-![[Pasted image 20251222220615.png]]
+![iamge](/chapter-1/13.png)
 1. **Data Collection (ALL):** Aggregate structured and unstructured datasets
 2. **Data Cleaning and Preprocessing (ALL):** Handle missing values, normalize features.
 3. **Exploratory Data Analysis `EDA` (Data Mining):** Visualize patterns, correlations, and anomalies
@@ -158,7 +150,7 @@ we combine 3 of them for creating a powerful workflow for our systems data
 
 ## Summary 
 
-![[Pasted image 20251222220311.png]]
+![iamge](/chapter-1/6.png)
 
 - **Data Mining:** uncovers hidden patterns and associations from datasets.
 - **Machine Learning:** builds predictive models that generalize to unseen data
@@ -199,7 +191,7 @@ we combine 3 of them for creating a powerful workflow for our systems data
 
 **02-Implement a simple linear regression model in Python on a dataset of your choice and explain the meaning of slope and intercept.**
 
-![[Pasted image 20251222215715.png]]
+![iamge](/chapter-1/7.png)
 
 - **Slope:**
 	- The slope shows how much the dependent variable changes when the independent variable increases by one unit
@@ -212,21 +204,21 @@ we combine 3 of them for creating a powerful workflow for our systems data
 
 **03-Compare supervised, unsupervised, and reinforcement learning with real-world examples**
 
-![[Pasted image 20251222215742.png]]
+![iamge](/chapter-1/8.png)
 
 ---
 **04-Write Python code to detect association rules from transaction data and explain how support, confidence, and lift measure rule quality.**
 
-![[Pasted image 20251222220121.png]]
+![iamge](/chapter-1/9.png)
 
-![[Pasted image 20251222220226.png]]
+![iamge](/chapter-1/10.png)
 
-![[Pasted image 20251222220238.png]]
+![iamge](/chapter-1/11.png)
 
 ---
 **05-Build a small neural network using Keras for a binary classification problem (e.g.,predicting pass/fail from exam scores). Explain how backpropagation updates the weights.**
 
-![[Pasted image 20251222220429.png]]
+![iamge](/chapter-1/12.png)
 
 - **Back propagation:** the algorithm used to train neural networks by adjusting their weights to reduce prediction error.
 	- $New\ weight=Old\ weight−learning\ rate×gradient$

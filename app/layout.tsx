@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 import TubeLightNavbar from "@/components/navbar";
+import BackTopButton from "@/components/back-top-button";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -54,6 +55,7 @@ export default function RootLayout({
             >
               <TubeLightNavbar/>
               <LenisProvider>{children}</LenisProvider>
+              <BackTopButton/>
             </ThemeProvider>
           </main>
         </div>

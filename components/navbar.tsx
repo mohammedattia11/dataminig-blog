@@ -2,15 +2,16 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaBriefcase, FaFileAlt, FaUser } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
+import { BsPatchQuestionFill } from "react-icons/bs";
 import { GoHomeFill } from "react-icons/go";
 
 function TubeLightNavbar() {
-  const [activeTab, setActiveTab] = useState("Home");
+  const [activeTab, setActiveTab] = useState("Chapters");
   const [isMobile, setIsMobile] = useState(false);
   const tabs = [
-    { name: "Home", url: "/", icon: <GoHomeFill /> },
-    { name: "Problem solving", url: "/problem-solving", icon: <FaUser /> },
+    { name: "Chapters", url: "/", icon: <GoHomeFill /> },
+    { name: "Problem solving", url: "/problem-solving", icon: <BsPatchQuestionFill/> },
     { name: "Summaries", url: "/summaries", icon: <FaBriefcase /> },
   ];
 

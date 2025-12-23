@@ -93,7 +93,7 @@ $m \to$ slope
 $b$ -> intercept (where the line starts on the y-axis.)
 $x$ -> input
 
-![[Pasted image 20251222210448.png]]
+![test](/regression.png)
 ## 03-Deep Learning – The Neural Revolution
 
 ### 3.1-Definition 

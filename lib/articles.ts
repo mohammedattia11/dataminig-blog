@@ -49,7 +49,7 @@ export function getCategorizedArticles() : Record<string,ArticleType[]> {
   return categorizedArticles;
 }
 
-export async function getArticlesData(id:string) {
+export async function getArticleData(id:string) {
   const fullPath = path.join(articlesDirectory,`${id}.md`);
 
   const fileContents = fs.readFileSync(fullPath,"utf-8");

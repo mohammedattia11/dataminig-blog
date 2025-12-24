@@ -5,8 +5,6 @@ date: "12-23-2025"
 background_image: "/chapter-1/11.png"
 tags: ["Data Mining","ML","DL"]
 ---
-# Foundations of Data Mining
-
 ## 01-Data Mining – The Art of Discovering Knowledge
 
 ### 1.1 Definition and Purpose

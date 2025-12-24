@@ -5,7 +5,6 @@ date: "12-23-2025"
 background_image: "/chapter-5/3.png"
 tags: ["ML"]
 ---
-# Data Preprocessing and Feature Engineering
 ![image](/chapter-5/1.png)
 
 High quality data is the backbone for accurate and reliable models

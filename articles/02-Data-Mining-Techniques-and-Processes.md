@@ -5,8 +5,6 @@ date: "12-23-2025"
 background_image: "/chapter-2/13.png"
 tags: ["Data Mining"]
 ---
-# Data Mining Techniques and Processes
-
 ## 2.1-Introduction to Data Mining 
 
 > what is Data Mining?

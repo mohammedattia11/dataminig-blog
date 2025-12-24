@@ -5,7 +5,6 @@ date: "12-23-2025"
 background_image: "/chapter-3/7.png"
 tags: ["ML"]
 ---
-# Foundations of machine learning
 ## 3.1-Introduction to machine learning
 
 ![image](/chapter-3/1.png)

@@ -6,8 +6,9 @@
   --font-poppins: var(--font-poppins);
   --font-playfair: var(--font-playfair);
 }
+
 .article {
-  @apply flex flex-col gap-8 font-poppins text-[1.125rem] leading-[1.8] max-w-3xl mx-auto mb-24 text-neutral-200;
+  @apply flex flex-col gap-5 font-poppins text-[1.125rem] leading-[1.8] max-w-3xl mx-auto mb-24 text-neutral-200;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,13 +16,13 @@
 }
 
 .article > h1 {
-  @apply font-playfair text-5xl md:text-6xl text-left tracking-tight mt-8 mb-6 text-white font-medium;
+  @apply font-playfair text-4xl text-left tracking-tight text-white font-medium;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
 .article > h2 {
-  @apply font-playfair text-3xl md:text-4xl text-left mt-12 mb-4 text-white;
+  @apply font-playfair text-3xl text-left text-white;
   line-height: 1.3;
   letter-spacing: -0.01em;
   padding-bottom: 0.75rem;
@@ -29,27 +30,23 @@
 }
 
 .article > h3 {
-  @apply font-poppins text-xl md:text-2xl font-semibold mt-8 mb-4 text-neutral-100;
+  @apply font-poppins text-xl md:text-2xl font-semibold text-neutral-100;
   line-height: 1.4;
 }
 
 .article > h4 {
-  @apply font-poppins text-lg font-semibold mt-6 mb-3 text-neutral-100;
+  @apply font-poppins text-lg font-semibold  text-neutral-100;
   line-height: 1.4;
 }
 
 .article > p {
-  @apply leading-[1.9] text-neutral-200 mb-5;
+  @apply leading-[1.9] text-neutral-200 ;
   font-size: 1.125rem;
-}
-
-.article > p + p {
-  margin-top: 1.5rem;
 }
 
 .article > ol,
 .article > ul {
-  @apply my-6 flex flex-col gap-3 pl-8 pr-2;
+  @apply my-2 flex flex-col gap-3 pl-8 pr-2;
   line-height: 1.8;
 }
 
@@ -61,6 +58,7 @@
   @apply list-disc;
 }
 
+/* Improved nested list styling */
 .article li {
   @apply pl-2 mb-2;
   line-height: 1.8;
@@ -68,11 +66,40 @@
 
 .article li > ul,
 .article li > ol {
-  @apply my-3 ml-6;
+  @apply my-3 ml-4 md:ml-6;
+}
+
+/* Nested list indentation and styling */
+.article ul ul,
+.article ol ol,
+.article ul ol,
+.article ol ul {
+  @apply mb-2;
+}
+
+.article ul ul {
+  list-style-type: circle;
+}
+
+.article ul ul ul {
+  list-style-type: square;
+}
+
+.article ol ol {
+  list-style-type: lower-alpha;
+}
+
+.article ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* Ensure nested lists have proper spacing */
+.article li > :not(ul, ol) {
+  margin-bottom: 0.5rem;
 }
 
 .article > pre {
-  @apply bg-neutral-900/80 border border-white/10 rounded-xl p-6 my-8 overflow-x-auto shadow-2xl;
+  @apply bg-neutral-900/80 border border-white/10 rounded-xl p-6 my-3 overflow-x-auto shadow-2xl;
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -92,7 +119,7 @@
 }
 
 .article > blockquote {
-  @apply pl-8 py-4 italic border-l-4 border-pink-500/60 bg-white/[0.03] rounded-r-lg my-8 mx-2 text-neutral-200;
+  @apply pl-8 py-4 italic border-l-4 border-pink-500/60 bg-white/[0.03] rounded-r-lg my-3 mx-2 text-neutral-200;
   line-height: 1.8;
   font-size: 1.1rem;
 }
@@ -107,11 +134,11 @@
 }
 
 .article img {
-  @apply my-8 rounded-lg max-w-full h-auto shadow-lg;
+  @apply my-5 rounded-lg max-w-full h-auto shadow-lg;
 }
 
 .article > hr {
-  @apply my-12 border-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent;
+  @apply my-8 border-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent;
 }
 
 .article table {
@@ -151,28 +178,128 @@
 
 @media (max-width: 768px) {
   .article {
-    @apply gap-6 text-[1rem] leading-[1.8];
+    @apply gap-3;
+    font-size: 1rem; /* Reduced base font size for mobile */
+    line-height: 1.75;
   }
 
   .article > h1 {
-    @apply text-4xl mt-6 mb-4;
+    @apply text-3xl md:text-4xl;
+    line-height: 1.25;
   }
 
   .article > h2 {
-    @apply text-2xl mt-8 mb-3;
+    @apply text-2xl md:text-3xl;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    padding-bottom: 0.5rem;
   }
 
   .article > h3 {
-    @apply text-xl mt-6 mb-3;
+    @apply text-xl;
+    font-size: 1.375rem;
+    line-height: 1.35;
+  }
+
+  .article > h4 {
+    @apply text-lg;
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+
+  .article > p {
+    font-size: 1rem; /* Reduced from 1.125rem */
+    line-height: 1.75;
+    /* margin-bottom: 1rem; */
+  }
+
+  .article > p:first-of-type {
+    font-size: 1.125rem; /* Slightly larger for lead paragraph */
+  }
+
+  .article > ol,
+  .article > ul {
+    @apply pl-6 pr-2 my-4;
+    font-size: 0.95rem; /* Slightly smaller for lists */
+  }
+
+  .article li > ul,
+  .article li > ol {
+    @apply ml-3; /* Reduced indentation for mobile */
   }
 
   .article > pre {
     @apply p-4 my-6;
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Smaller code font for mobile */
+    line-height: 1.6;
+  }
+
+  .article pre code {
+    font-size: 0.85rem;
+  }
+
+  .article code {
+    font-size: 0.85em;
   }
 
   .article > blockquote {
-    @apply pl-6 py-3 mx-0;
+    @apply pl-4 py-3 mx-0;
+    font-size: 1rem; /* Reduced quote font size */
+    line-height: 1.7;
+  }
+
+  .article > hr {
+    @apply my-3;
+  }
+
+  .article table {
+    @apply my-6;
+    font-size: 0.9rem;
+  }
+
+  .article th,
+  .article td {
+    @apply p-2;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .article {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .article > h1 {
+    font-size: 1.3rem;
+  }
+
+  .article > h2 {
+    font-size: 1rem;
+  }
+
+  .article > h3 {
+    font-size: 0.9rem;
+  }
+
+  .article > p {
+    font-size: 0.8rem;
+    margin-block : 0.5rem;
+  }
+
+  .article > ol,
+  .article > ul {
+    font-size: 0.9rem;
+    @apply pl-5;
+  }
+
+  .article > pre {
+    font-size: 0.8rem;
+  }
+
+  .article > blockquote {
+    font-size: 0.95rem;
+    @apply pl-3;
   }
 }
 

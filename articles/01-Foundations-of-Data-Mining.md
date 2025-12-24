@@ -221,7 +221,7 @@ We combine all three to create a powerful workflow for data-driven systems.
 5. **Model Training (ML or DL):** Learn patterns
 6. **Model Evaluation (ML/DL):** Accuracy, F1-score, `ROC-AUC`
 7. **Deployment & Monitoring (ML/DL):** Production integration and drift monitoring
-
+<!-- 
 
 ## Summary
 
@@ -257,8 +257,8 @@ We combine all three to create a powerful workflow for data-driven systems.
 4. إضافة لمستك — **Feature Engineering/Selection**
 5. النمذجة — **Modeling**
 6. التقييم — **Evaluation**
-7. الإطلاق والمتابعة — **Deployment & Monitoring**
-
+7. الإطلاق والمتابعة — **Deployment & Monitoring** -->
+<!-- 
 
 ## Problem-Solving
 
@@ -299,4 +299,4 @@ We combine all three to create a powerful workflow for data-driven systems.
 * **Backpropagation:** Adjusts weights to minimize prediction error
 
   * $New\ weight = Old\ weight − learning\ rate × gradient$
-  * Forward → Loss → Backward → Update
+  * Forward → Loss → Backward → Update -->

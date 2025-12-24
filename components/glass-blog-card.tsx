@@ -84,10 +84,10 @@ export function GlassBlogCard({
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/25"
+                className="flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/25 cursor-pointer"
               >
                 <BookOpen className="h-4 w-4" />
-                <Link href={`/${id}`}>Read Chapter</Link>
+                Read Chapter
               </motion.button>
             </div>
           </div>

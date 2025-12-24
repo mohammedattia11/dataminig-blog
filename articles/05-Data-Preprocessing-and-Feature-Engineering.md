@@ -5,6 +5,7 @@ date: "12-23-2025"
 background_image: "/chapter-5/3.png"
 tags: ["ML"]
 ---
+# Data Preprocessing and Feature Engineering
 ![image](/chapter-5/1.png)
 
 High quality data is the backbone for accurate and reliable models
@@ -27,7 +28,7 @@ Raw datasets from real-world sources are rarely perfect because it contains miss
 	- Balancing datasets for classification problems.
 	- Splitting data into training, validation, and test sets.
 
-***Machine learning models learn patterns from data. If the input data is incomplete, inconsistent, or noisy, the learned patterns will be misleading, Preprocessing becomes the solution for out problem ensuring that the model receives Meaningful and high-quality data, maximizing predictive performance.**
+Machine learning models learn patterns from data. If the input data is incomplete, inconsistent, or noisy, the learned patterns will be misleading, Preprocessing becomes the solution for out problem ensuring that the model receives Meaningful and high-quality data, maximizing predictive performance
 
 ## 5.2-Handling Missing Data 
 
@@ -39,14 +40,13 @@ System errors, incomplete surveys, or transmission failures.
 **What is the benefit from handling missing values?**
 Handling missing data prevents biases and ensures models are trained on complete datasets
 
-### Handling Missing Values 
-
+### Stratgies 
 - **Deletion Methods:**
 	- Drop rows or columns with missing values (Useful when missing data is minimal.)
 - **Imputation Methods:**
-	- ***Mean/Median/Mode Imputation:** Replace missing **numerical values** with the mean or median, **categorical values**, use the mode
-	- ***Forward or Backward Fill:** Propagate previous or next value in time series.
-	- ***Predictive Imputation:*** Use machine learning models to predict missing values.
+	- **Mean/Median/Mode Imputation:** Replace missing **numerical values** with the mean or median, **categorical values**, use the mode
+	- **Forward or Backward Fill:** Propagate previous or next value in time series.
+	- **Predictive Imputation:*** Use machine learning models to predict missing values.
 ### Python Code
 
 ![image](/chapter-5/4.png)
@@ -62,18 +62,17 @@ Handling missing data prevents biases and ensures models are trained on complete
 **Why outliers happen?**
 Because measurement errors, data entry errors, or rare events.
 
-### How To Solve Outliers ?
+### Outliers solutions ?
+- **Detection Techniques:**
+  - **Z-score Method:** Flag data points beyond ±3 *standard deviations*
+  - **Interquartile Range (IQR):** Values below Q1 - 1.5IQR or above Q3 + 1.5IQR are Considered outliers.
+  - **Visualization:** ***Boxplots*** or ***scatter plots*** help visually detect anomalies.
 
-#### 01-Detection Techniques:
+- **Handling Outliers:**
 
-1. **Z-score Method:** Flag data points beyond ±3 *standard deviations*
-2. **Interquartile Range (IQR):** Values below Q1 - 1.5IQR or above Q3 + 1.5IQR are Considered outliers.
-3. **Visualization:** ***Boxplots*** or ***scatter plots*** help visually detect anomalies.
-#### 02-Handling Outliers:
-
-1. **Removal:** Drop extreme values if they are errors.
-2. **Transformation:** Apply ***log*** or ***square root transformation*** to reduce skew.
-3. **Capping:** Clip extreme values to a threshold.
+  - **Removal:** Drop extreme values if they are errors.
+  - **Transformation:** Apply ***log*** or ***square root transformation*** to reduce skew.
+  - **Capping:** Clip extreme values to a threshold.
 ### Python Code 
 
 ![image](/chapter-5/6.png)
@@ -84,9 +83,9 @@ Because measurement errors, data entry errors, or rare events.
 Because many algorithms work only with *numeric data*. Therefore, categorical variables must be converted into *numeric representations*
 
 - **Encoding techniques :**
-	- ***Label encoding:** Assigns integer labels to categories.
-	- ***One-hot encoding:** Creates a binary column for each category.
-	- ***Target Encoding:** Replaces a category with the mean of the target variable
+	- **Label encoding:** Assigns integer labels to categories.
+	- **One-hot encoding:** Creates a binary column for each category.
+	- **Target Encoding:** Replaces a category with the mean of the target variable
 
 ![image](/chapter-5/8.png)
 
@@ -94,7 +93,6 @@ Because many algorithms work only with *numeric data*. Therefore, categorical va
 
 **Ordinal data:** categories that follow a logical order or hierarchy (High School < Bachelor's < Master's)
 
----
 ***One-hot encoding is preferred for nominal data to avoid implicit ordering***
 
 **implicit ordering:** If you used Label Encoding for colors (Red=0, Blue=1, Green=2), the model might mistakenly assume that Green (2) is "twice as much" as Blue (1), or that Blue is "higher" than Red
@@ -133,25 +131,22 @@ If you want to get the highest grade possible without actually studying, what wo
 
 ### Common examples 
 
-**Fraud Detection:** 99.9% of credit card transactions are legitimate; only 0.1% are fraudulent.
+- **Fraud Detection:** 99.9% of credit card transactions are legitimate; only 0.1% are fraudulent.
 
-**Medical Diagnosis:** In a screening for a rare disease, 99.5% of patients may be healthy.
+- **Medical Diagnosis:** In a screening for a rare disease, 99.5% of patients may be healthy.
 
-**Spam Filtering:** Most emails are "Ham" (wanted), while only a small fraction are "Spam."
+- **Spam Filtering:** Most emails are "Ham" (wanted), while only a small fraction are "Spam."
 
 ### Strategies
 
-#### 01-Data-Level: Resampling
+- **Data-Level: Resampling**
+  - **Oversampling:** You duplicate examples from the minority class.
+  This can lead to **overfitting** because the model sees the exact same minority examples repeatedly.
+  - **Undersampling:** You remove examples from the majority class to match the minority class.
 
-**Oversampling:** You duplicate examples from the minority class.
-This can lead to **overfitting** because the model sees the exact same minority examples repeatedly.
-
-**Undersampling:** You remove examples from the majority class to match the minority class.
-
-**SMOTE (Synthetic Minority Over-sampling Technique):** Instead of just duplicating data, SMOTE creates _new, synthetic_ examples by looking at the "neighbors" of existing minority points and creating data in between them.
-#### 02-Algorithm-Level: Adjustments
-
-**Class Weights:** You tell the model that the minority class is "more important." For example, you can penalize the model 10x more for missing a "Fraud" case than for misclassifying a "Legitimate" one.
+  - **SMOTE (Synthetic Minority Over-sampling Technique):** Instead of just duplicating data, SMOTE creates _new, synthetic_ examples by looking at the "neighbors" of existing minority points and creating data in between them.
+- **Algorithm-Level: Adjustments**
+  - **Class Weights:** You tell the model that the minority class is "more important." For example, you can penalize the model 10x more for missing a "Fraud" case than for misclassifying a "Legitimate" one.
 
 ## 5.8-Splitting Data into (Training, validation, test sets)
 

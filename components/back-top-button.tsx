@@ -27,8 +27,8 @@ export default function BackTopButton() {
       aria-label="Back to top"
       className={`
         fixed bottom-6 right-6 z-50
-        rounded-full bg-black text-white
-        p-3 shadow-lg
+        rounded-full bg-zinc-100 text-black text-xs
+        px-3 py-2 shadow-lg
         transition-opacity duration-300 cursor-pointer
         ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}
       `}

@@ -4,6 +4,8 @@ category: "data-mining"
 date: "12-23-2025"
 background_image: "/chapter-5/3.png"
 tags: ["ML"]
+description: "This chapter details the critical processes of Data Preprocessing and Feature Engineering, emphasizing the Garbage In, Garbage Out principle—where model quality depends entirely on data quality"
+readTime: "12 min read"
 ---
 ![image](/chapter-5/1.png)
 

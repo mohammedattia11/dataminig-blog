@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 type Props = {
   id:string,
-  content:string
+  content:React.ReactNode
 }
 export default function NavigationButton({id,content}:Props) {
   const router = useRouter();

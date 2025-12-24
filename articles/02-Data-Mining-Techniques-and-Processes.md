@@ -4,6 +4,8 @@ category: "data-mining"
 date: "12-23-2025"
 background_image: "/chapter-2/13.png"
 tags: ["Data Mining"]
+description: "This chapter examines Data Mining and the KDD process, detailing core techniques like classification, clustering, and association rules to extract actionable insights from complex datasets"
+readTime: "15 min read"
 ---
 ## 2.1-Introduction to Data Mining 
 

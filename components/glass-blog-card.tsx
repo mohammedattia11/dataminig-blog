@@ -21,33 +21,30 @@ interface GlassBlogCardProps {
   tags?: string[];
   className?: string;
   id: string;
+  description:string
 }
 
 const defaultPost = {
   title: "The Future of UI Design",
-  excerpt:
-    "Exploring the latest trends in glassmorphism, 3D elements, and micro-interactions.",
   image:
     "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
   author: {
     name: "Mohamed Atia",
     avatar: "https://github.com/shadcn.png",
   },
-  date: "Dec 2, 2025",
   readTime: "10 min read",
   tags: ["Design", "UI/UX"],
 };
 
 export function GlassBlogCard({
   title = defaultPost.title,
-  excerpt = defaultPost.excerpt,
   image = defaultPost.image,
   author = defaultPost.author,
-  date = defaultPost.date,
   readTime = defaultPost.readTime,
   tags = defaultPost.tags,
   className,
   id,
+  description
 }: GlassBlogCardProps) {
   return (
     <motion.div
@@ -56,7 +53,7 @@ export function GlassBlogCard({
       transition={{ duration: 0.4 }}
       className={cn("w-full max-w-[400px]", className)}
     >
-      <Card className="group relative h-[29rem] overflow-hidden rounded-2xl border-border/50 bg-card/30 backdrop-blur-md transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10">
+      <Card className="group relative h-[28rem] overflow-hidden rounded-2xl border-border/50 bg-card/30 backdrop-blur-md transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10">
         {/* Image Section */}
         <Link href={`/${id}`}>
           <div className="relative aspect-[16/9] overflow-hidden">
@@ -99,7 +96,7 @@ export function GlassBlogCard({
                 {title}
               </h3>
               <p className="line-clamp-2 text-sm text-muted-foreground">
-                {excerpt}
+                {description}
               </p>
             </div>
 
@@ -113,7 +110,6 @@ export function GlassBlogCard({
                   <span className="font-medium text-foreground">
                     {author.name}
                   </span>
-                  <span className="text-muted-foreground">{date}</span>
                 </div>
               </div>
 

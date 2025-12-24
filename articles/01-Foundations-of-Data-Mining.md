@@ -4,6 +4,8 @@ category: "data-mining"
 date: "12-23-2025"
 background_image: "/chapter-1/11.png"
 tags: ["Data Mining","ML","DL"]
+description: "This chapter provides a comprehensive foundational overview of three interconnected fields: Data Mining, Machine Learning (ML), and Deep Learning (DL), distinguishing their roles in processing data and generating insights"
+readTime: "18 min read"
 ---
 ## 01-Data Mining – The Art of Discovering Knowledge
 

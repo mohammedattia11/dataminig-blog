@@ -26,6 +26,8 @@ export function getSortedArticles():ArticleType[] {
       backgroundImage:matterResults.data.background_image,
       tags:matterResults.data.tags,
       data: fileContents,
+      description:matterResults.data.description,
+      readTime:matterResults.data.readTime,
     }
   })
   return allArticlesData.sort((a,b) => {

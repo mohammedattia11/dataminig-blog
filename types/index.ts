@@ -5,4 +5,6 @@ export type ArticleType = {
   category:string
   backgroundImage:string
   tags:string[]
+  description:string
+  readTime:string
 }

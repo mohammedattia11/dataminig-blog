@@ -17,6 +17,8 @@ export default function Home() {
               key={article.id}
               title={article.title}
               tags={article.tags}
+              description={article.description}
+              readTime={article.readTime}
             />
           ))}
       </section>

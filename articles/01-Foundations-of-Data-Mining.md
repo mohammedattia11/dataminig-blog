@@ -21,32 +21,20 @@ Statistical approaches focus on testing hypotheses, but **data mining emphasizes
   * Detect anomalies
   * Identify opportunities
 
-* **Knowledge Discovery in Databases (KDD): Data mining framework (stages)**
+- **Knowledge Discovery in Databases (KDD): Data mining framework (stages):** 
+  - **Data Cleaning:**  Remove noise, missing values, and inconsistencies in the dataset. *Techniques* include *imputation*, *smoothing*, and *outlier detection*
+  - **Data Integration:** Data is often collected from multiple sources (e.g., retail branches, sensors, databases). Integration merges these into a unified dataset, resolving conflicts and redundancies.
+  - **Data Selection:** The subset of relevant features and records is extracted for analysis. This reduces computational complexity and focuses the mining process.
+  - **Data Transformation:** Convert data into suitable formats (*normalization*, scaling, encoding categorical variables, or aggregating temporal data) or perform *dimensionality reduction*.
+  - **Data Mining (Core of the Process):** Apply algorithms to discover patterns, relationships, or anomalies.
+  - **Pattern Evaluation:** Assess the discovered patterns to identify meaningful results.
+    - Not all discovered patterns are interesting or actionable.
+    - Metrics such as **support**, **confidence**, **lift**, **accuracy**, or **statistical significance** are used.
+  - **Knowledge Presentation:** Present the insights in interpretable formats, such as visualizations or reports.
 
-  1. **Data Cleaning:**  Remove noise, missing values, and inconsistencies in the dataset. *Techniques* include *imputation*, *smoothing*, and *outlier detection*
-  2. **Data Integration:** Data is often collected from multiple sources (e.g., retail branches, sensors, databases). Integration merges these into a unified dataset, resolving conflicts and redundancies.
+> KDD is an iterative process, often requiring repeated refinements of data preprocessing and pattern evaluation to achieve reliable outcomes
 
-  3. **Data Selection**
-     The subset of relevant features and records is extracted for analysis. This reduces computational complexity and focuses the mining process.
-
-  4. **Data Transformation**
-     Convert data into suitable formats (*normalization*, scaling, encoding categorical variables, or aggregating temporal data) or perform *dimensionality reduction*.
-
-  5. **Data Mining (Core of the Process)**
-     Apply algorithms to discover patterns, relationships, or anomalies.
-
-  6. **Pattern Evaluation**
-     Assess the discovered patterns to identify meaningful results.
-
-     * Not all discovered patterns are interesting or actionable.
-     * Metrics such as **support**, **confidence**, **lift**, **accuracy**, or **statistical significance** are used.
-
-  7. **Knowledge Presentation**
-     Present the insights in interpretable formats, such as visualizations or reports.
-
-*KDD is an iterative process, often requiring repeated refinements of data preprocessing and pattern evaluation to achieve reliable outcomes.*
-
-
+---
 
 ### 1.2 Types of Patterns in Data Mining
 

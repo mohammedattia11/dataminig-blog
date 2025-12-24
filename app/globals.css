@@ -119,13 +119,13 @@
 }
 
 .article > blockquote {
-  @apply pl-8 py-4 italic border-l-4 border-pink-500/60 bg-white/[0.03] rounded-r-lg my-3 mx-2 text-neutral-200;
+  @apply pl-8 pr-3 py-4 italic border-l-4 border-pink-500/60 bg-white/[0.03] rounded-r-lg my-3 mx-2 text-neutral-200;
   line-height: 1.8;
   font-size: 1.1rem;
 }
 
 .article > blockquote > p {
-  @apply mb-0 text-neutral-200;
+  @apply mb-0 text-neutral-200 sm:text-sm leading-6 lg:text-lg;
 }
 
 .article a {

@@ -1,6 +1,6 @@
 @reference "../globals.css";
 .article {
-  @apply flex flex-col gap-5 font-poppins text-[1.125rem] leading-[1.8] max-w-3xl mx-auto mb-24 text-neutral-200;
+  @apply flex flex-col gap-5 font-poppins text-[1.125rem] leading-[1.8] max-w-3xl mx-auto mb-10 text-neutral-200;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

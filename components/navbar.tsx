@@ -1,14 +1,13 @@
 "use client";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BsPatchQuestionFill } from "react-icons/bs";
 import { FaBriefcase } from "react-icons/fa";
 import { GoHomeFill } from "react-icons/go";
 
 function TubeLightNavbar() {
   const [activeTab, setActiveTab] = useState("Chapters");
-  const [isMobile, setIsMobile] = useState(false);
 
   // --- Scroll Visibility Logic ---
   const [visible, setVisible] = useState(true);
@@ -33,13 +32,6 @@ function TubeLightNavbar() {
     },
     { name: "Summaries", url: "/summaries", icon: <FaBriefcase /> },
   ];
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <motion.nav

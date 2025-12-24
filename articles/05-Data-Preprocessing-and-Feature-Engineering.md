@@ -157,7 +157,7 @@ If you want to get the highest grade possible without actually studying, what wo
 - **Without `random_state`:** Every time you click "Run," the computer picks different rows for your training set. This means your model's accuracy might change slightly (e.g., 85% now, 82% later) just because of the luck of the draw.
     
 - **With `random_state=42`:** The computer uses a specific pattern to shuffle. No matter how many times you run it, the "Training" rows and "Testing" rows will be exactly the same.
-
+<!-- 
 ## Summary 
 
 ![image](/chapter-5/15.png)
@@ -189,4 +189,4 @@ If you want to get the highest grade possible without actually studying, what wo
 
 ---
 ### A dataset has a highly skewed column "Transaction_Amount". Which transformation Technique would you apply and why?
-
+ -->

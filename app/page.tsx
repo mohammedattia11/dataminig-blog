@@ -4,7 +4,7 @@ import { getSortedArticles } from "@/lib/articles";
 export default function Home() {
   const articles = getSortedArticles();
   return (
-    <section className="w-11/12 mx-auto md:1/2 mt-10 flex flex-col gap-12 mb-20">
+    <section className="w-11/12 mx-auto md:1/2 mt-10 flex flex-col gap-12 mb-20 pt-16">
       {/* <header className="font-cormorant-garamond font-light text-6xl text-center"> */}
         {/* <h1>Data mining blog</h1> */}
       {/* </header> */}

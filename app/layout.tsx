@@ -33,9 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfair.variable} ${poppins.variable} antialiased `}>
-        <div className="min-h-screen w-full relative bg-black overflow-y-scroll">
+        <div className="min-h-dvh w-full relative bg-black overflow-y-scroll">
           <div
-            className="absolute inset-0 z-0 fixed"
+            className="inset-0 z-0 fixed"
             style={{
               background: `
                       radial-gradient(ellipse 120% 80% at 70% 20%, rgba(255, 20, 147, 0.15), transparent 50%),

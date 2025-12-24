@@ -1,8 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { getArticleData } from "@/lib/articles";
 import { getPrevNextArticle } from "@/lib/get-prev-next-slugs";
-import Link from "next/link";
 import style from "./article.module.css";
+import NavigationButton from "@/components/navigation-button";
 type Props = {
   params: Promise<{ article: string }>;
 };
@@ -19,16 +18,8 @@ export default async function ArticlePage({ params }: Props) {
       />
       {(prev !== null || next !== null) && (
           <div className="flex justify-around pb-5 pr-6">
-            {prev !== null && (
-              <Button>
-                <Link href={`/${prev.id}`}>Previous Chapter</Link>
-              </Button>
-            )}
-            {next !== null && (
-              <Button>
-              <Link href={`/${next.id}`}>Next Chapter</Link>
-            </Button>
-            )}
+            {prev !== null && <NavigationButton id={prev.id} content="Previous Chapter"/>}
+            {next !== null && <NavigationButton id={next.id} content="Next Chapter"/>}
           </div>
         )}
     </section>

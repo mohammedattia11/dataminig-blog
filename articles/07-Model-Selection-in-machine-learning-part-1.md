@@ -3,7 +3,7 @@ title: "07-Model Selection in ML part-1"
 category: "data-mining"
 date: "12-23-2025"
 background_image: "/chapter-7-part-1/1.png"
-tags: ["ML"]
+tags: ["ML","DL"]
 description: "This chapter guides you through the critical process of choosing the most appropriate algorithm to ensure models generalize well to unseen data rather than just memorizing training sets"
 readTime: "25 min read"
 ---

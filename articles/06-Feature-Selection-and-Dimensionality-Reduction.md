@@ -13,9 +13,9 @@ While it may seem that having more features improves Model performance, high-dim
 
 ![image](/chapter-6/2.png)
 
-- **Two complementary strategies to tackle these issues:**
-	- **Feature Selection:** Choosing the most relevant subset of features and discarding irrelevant or redundant ones
-	- **Dimensionality Reduction:** Transforming data into a lower-dimensional space while preserving essential information.
+**Two complementary strategies to tackle these issues:**
+- **Feature Selection:** Choosing the most relevant subset of features and discarding irrelevant or redundant ones
+- **Dimensionality Reduction:** Transforming data into a lower-dimensional space while preserving essential information.
 
 > Both strategies aim to improve model **accuracy**, **reduce overfitting**, and **enhance Computational efficiency**.
 
@@ -49,10 +49,10 @@ Feature selection ensures that only **meaningful attributes** are used to build 
 
 >  rely on statistical measures to rank and select features independently, They are **fast**, **scalable**, and **easy to interpret**
 
-- **Common Techniques:**
-	- **Correlation Coefficient (`Pearson’s r`):** Measures linear relationships between numerical features.
-	- **Chi-Square Test:** Evaluates dependency between categorical features and target variable.
-	- **Mutual Information:** Measures non-linear relationships between features and target
+**Common Techniques:**
+- **Correlation Coefficient (`Pearson’s r`):** Measures linear relationships between numerical features.
+- **Chi-Square Test:** Evaluates dependency between categorical features and target variable.
+- **Mutual Information:** Measures non-linear relationships between features and target
 
 ![image](/chapter-6/5.png)
 
@@ -70,10 +70,10 @@ Feature selection ensures that only **meaningful attributes** are used to build 
 
 **They are computationally intensive but often produce better results than filter methods.**
 
-- **Techniques:**
-	- **Recursive Feature Elimination (`RFE`):** Iteratively removes the least important features.
-	- **Forward Selection:** Starts with no features and adds one at a time based on performance.
-	- **Backward Elimination:** Starts with all features and removes one at a time.
+**Techniques:**
+- **Recursive Feature Elimination (`RFE`):** Iteratively removes the least important features.
+- **Forward Selection:** Starts with no features and adds one at a time based on performance.
+- **Backward Elimination:** Starts with all features and removes one at a time.
 
 ![image](/chapter-6/7.png)
 
@@ -85,9 +85,9 @@ Features ranked 1 are the most important; higher ranks indicate less relevance.
 1. Perform feature selection during the **model training process.**
 2. Combining the advantages of filters and wrappers
 
-- **Techniques:**
-	- **Lasso Regression (`L1 Regularization`):** Shrinks coefficients of less important features to zero.
-	- **Decision Tree-based Models:** Compute feature importance during training (`Random Forest`,`XGBoost`)
+**Techniques:**
+- **Lasso Regression (`L1 Regularization`):** Shrinks coefficients of less important features to zero.
+- **Decision Tree-based Models:** Compute feature importance during training (`Random Forest`,`XGBoost`)
 
 ![image](/chapter-6/8.png)
 Features with coefficients close to zero are less influential and can be discarded.

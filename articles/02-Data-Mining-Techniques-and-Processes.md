@@ -2,7 +2,7 @@
 title: "02-Data Mining Techniques and Processes"
 category: "data-mining"
 date: "12-23-2025"
-background_image: "/chapter-2/13.png"
+background_image: "/chapter-2/13.webp"
 tags: ["Data Mining"]
 description: "This chapter examines Data Mining and the KDD process, detailing core techniques like classification, clustering, and association rules to extract actionable insights from complex datasets"
 readTime: "15 min read"
@@ -20,7 +20,7 @@ Combines *statistics*, *machine Learning*, and *artificial intelligence* techniq
 
 ### Industries uses data mining:
 
-![Industries](/chapter-2/1.png)
+![Industries](/chapter-2/1.webp)
 
 - **Business Intelligence:** - Identifying profitable customer segments
   - Optimizing marketing Campaigns.
@@ -46,12 +46,12 @@ Data Mining is the bridge between *raw data* and *meaningful*, *actionable* Know
 
 > The comprehensive process of transforming raw data into valuable knowledge
 
-![KDD Pipeline](/chapter-2/2.png)
+![KDD Pipeline](/chapter-2/2.webp)
 
 Data mining is a key step in the KDD pipeline, but the entire process includes preprocessing, pattern discovery, evaluation, and Presentation.
 
-![KDD Step 1](/chapter-2/3.png)
-![KDD Step 2](/chapter-2/4.png)
+![KDD Step 1](/chapter-2/3.webp)
+![KDD Step 2](/chapter-2/4.webp)
 
 More about KDD can be found in the [Foundations of Data Mining](/01-Foundations-of-Data-Mining) article.
 
@@ -71,7 +71,7 @@ More about KDD can be found in the [Foundations of Data Mining](/01-Foundations-
 
 These techniques are the backbone of data mining, each addressing different types of Analytical problems.
 
-![Techniques Overview](/chapter-2/5.png)
+![Techniques Overview](/chapter-2/5.webp)
 
 ### 2.3.1-Classification
 
@@ -85,7 +85,7 @@ These techniques are the backbone of data mining, each addressing different type
   - Fraud detection 
   - Credit scoring: Numeric assessment of how risky it is to lend money to someone.
 
-![Classification Process](/chapter-2/6.png)
+![Classification Process](/chapter-2/6.webp)
 
 - **Decision Trees:** Tree-based structures that split data based on feature thresholds.
 - **Naïve Bayes:** Probabilistic models based on Bayes' theorem.
@@ -93,11 +93,11 @@ These techniques are the backbone of data mining, each addressing different type
 - **Support Vector Machines (SVM):** Finds the optimal hyperplane separating classes.
 - **Neural Networks:** Can model complex non-linear relationships.
 
-![Algorithms](/chapter-2/7.png)
+![Algorithms](/chapter-2/7.webp)
 
 ### 2.3.2-Clustering
 
-![Clustering Image](/chapter-2/9.png)
+![Clustering Image](/chapter-2/9.webp)
 
 > Unsupervised learning technique for grouping similar data points without pre-existing labels; identifies hidden structures in the data.
 
@@ -110,7 +110,7 @@ These techniques are the backbone of data mining, each addressing different type
 
 ### 2.3.3-Association Rule Mining
 
-![Association Mining](/chapter-2/10.png)
+![Association Mining](/chapter-2/10.webp)
 
 > Uncovers relationships among variables in large datasets. The classic example is market basket analysis: *"70% of customers who buy bread also buy butter."*
 
@@ -125,7 +125,7 @@ These algorithms apply:
 
 ### 2.3.4-Regression
 
-![Regression Graph](/chapter-2/11.png)
+![Regression Graph](/chapter-2/11.webp)
 
 > Predicts continuous outcomes rather than discrete classes.
 
@@ -140,11 +140,10 @@ These algorithms apply:
 
 ## 2.4-Challenges in Data Mining 
 
-![Challenges](/chapter-2/13.png)
+![Challenges](/chapter-2/13.webp)
 
 1. ***Data Quality Issues:*** Missing, inconsistent, or noisy data.
 2. ***Scalability:*** Massive datasets requiring efficient algorithms.
 3. ***High Dimensionality:*** Too many features increase complexity.
 4. ***Interpretability:*** Complex models (black boxes) may lack transparency.
 5. ***Privacy Concerns:*** Handling sensitive personal data.
-

@@ -2,12 +2,12 @@
 title: "07-Model Selection in ML part-1"
 category: "data-mining"
 date: "12-23-2025"
-background_image: "/chapter-7-part-1/1.png"
+background_image: "/chapter-7-part-1/1.webp"
 tags: ["ML","DL"]
 description: "This chapter guides you through the critical process of choosing the most appropriate algorithm to ensure models generalize well to unseen data rather than just memorizing training sets"
 readTime: "25 min read"
 ---
-![image](/chapter-7-part-1/1.png)
+![image](/chapter-7-part-1/1.webp)
 
 **Model Selection Challenge:** 
 Different models embody different theoretical assumptions, biases, and computational strategies, which means that the “best” model is not universal but instead highly dependent on the **nature of the dataset**, **the problem at hand**, and **the intended use of the Predictions**.
@@ -19,7 +19,7 @@ Different models embody different theoretical assumptions, biases, and computati
 **The Goal:**
 Is to strike the right balance between **predictive power**, **computational efficiency**, and **Interpretability**, all while ensuring that the chosen model **generalizes well to unseen data.**
 
-![image](/chapter-7-part-1/2.png)
+![image](/chapter-7-part-1/2.webp)
 
 **The problems with choosing inappropriate model:**
 - A model with high bias, such as **linear regression** applied to nonlinear data, may **oversimplify** and **fail to capture important patterns**
@@ -38,7 +38,7 @@ Is to strike the right balance between **predictive power**, **computational eff
 
 ## 7.2-Linear Models 
 
-![image](/chapter-7-part-1/3.png)
+![image](/chapter-7-part-1/3.webp)
 
 **Why we would choose liner models:**
 - Simplicity
@@ -47,7 +47,7 @@ Is to strike the right balance between **predictive power**, **computational eff
 
 ### 7.2.1-Linear Regression 
 
-![image](/chapter-7-part-1/4.png)
+![image](/chapter-7-part-1/4.webp)
 
 **How linear regression works:**
 assumes that the relationship between the independent variables and the
@@ -75,21 +75,21 @@ Linear regression tries to draw the best straight line that is as close as possi
 
 > **independence of errors**: errors should not be related to each other,one mistake should **not influence** the next mistake
 
-![image](/chapter-7-part-1/5.png)
+![image](/chapter-7-part-1/5.webp)
 
 The model is trained by minimizing the residual sum of squares (`RSS`):
 
-![image](/chapter-7-part-1/6.png)
+![image](/chapter-7-part-1/6.webp)
 
 **Linear regression is interpretable:**
 Each coefficient represents the **expected change in the target** for a unit change in that feature
 
-![image](/chapter-7-part-1/7.png)
+![image](/chapter-7-part-1/7.webp)
 
 ---
 ### 7.2.2-Logistic Regression
 
-![image](/chapter-7-part-1/8.png)
+![image](/chapter-7-part-1/8.webp)
 
 **Logistic regression extends the concept of linear models to classification tasks.**
 Instead of predicting continuous outcomes, logistic regression maps inputs to probabilities using the logistic `sigmoid` function
@@ -115,16 +115,16 @@ Coefficients provide direct insights into how features influence the probability
 - Poor performance with complex, nonlinear patterns.
 - Solution by doing feature engineering or transform features into appropriately format.
 
-![image](/chapter-7-part-1/9.png)
+![image](/chapter-7-part-1/9.webp)
 
 ## 7.3-Tree-Based Models 
 
-![image](/chapter-7-part-1/10.png)
+![image](/chapter-7-part-1/10.webp)
 
 Tree-based models provide **non-linear decision boundaries** and are interpretable for tabular datasets.
 ### 7.3.1-Decision Trees 
 
-![image](/chapter-7-part-1/11.png)
+![image](/chapter-7-part-1/11.webp)
 
 Decision trees offer a non-linear approach to learning
 
@@ -145,7 +145,7 @@ This makes them **highly interpretable** and capable of handling both **categori
 - Prone to overfitting (especially when grown deep)
 - Sensitive to small data changes.
 
-![image](/chapter-7-part-1/12.png)
+![image](/chapter-7-part-1/12.webp)
 
 ### 7.3.2-Ensemble Methods: Random Forests and Gradient Boosting
 
@@ -155,7 +155,7 @@ The main goal from developing **Random Forests** and **Gradient Boosting** is to
 
 **Bootstrapped samples:** You make many “fake” datasets by randomly reusing rows from the original dataset.
 
-![image](/chapter-7-part-1/13.png)
+![image](/chapter-7-part-1/13.webp)
 
 **Combining the power of random forests and gradient boosting:**
 - By aggregating their predictions through **voting** or **averaging**
@@ -178,11 +178,11 @@ Using **hyper parameter** tuning to avoid overfitting.
 	- High accuracy but complex.
 	- (`XGBoost`,`LightGBM`,`CatBoost`)
 
-![image](/chapter-7-part-1/14.png)
+![image](/chapter-7-part-1/14.webp)
 
 ## 7.4-Support Vector Machines (SVM)
 
-![image](/chapter-7-part-1/15.png)
+![image](/chapter-7-part-1/15.webp)
 
 **SVM approaches to classification:**
 - They aim to find the optimal hyperplane that separates classes with the maximum margin, meaning the boundary that is as far as possible from data points of both Classes.
@@ -211,4 +211,4 @@ SVMs is a strong choice for medium-sized datasets in tasks such as **text classi
 
 **SVMs** aim to **maximize the margin between classes**. They can handle non-linear separability using **kernel functions.**
 
-![image](/chapter-7-part-1/16.png)
+![image](/chapter-7-part-1/16.webp)

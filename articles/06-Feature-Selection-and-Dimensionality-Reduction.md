@@ -2,16 +2,16 @@
 title: "06-Feature Selection and Dimensionality Reduction"
 category: "data-mining"
 date: "12-23-2025"
-background_image: "/chapter-6/1.png"
+background_image: "/chapter-6/1.webp"
 tags: ["ML"]
 description: "This chapter addresses the challenges associated with high-dimensional datasets, such as the risk of overfitting, increased computational costs"
 readTime: "15 min read"
 ---
-![image](/chapter-6/1.png)
+![image](/chapter-6/1.webp)
 
 While it may seem that having more features improves Model performance, high-dimensional data introduces challenges such as **overfitting**, **increased Computational cost**, and **reduced interpretability**.
 
-![image](/chapter-6/2.png)
+![image](/chapter-6/2.webp)
 
 **Two complementary strategies to tackle these issues:**
 - **Feature Selection:** Choosing the most relevant subset of features and discarding irrelevant or redundant ones
@@ -22,7 +22,7 @@ While it may seem that having more features improves Model performance, high-dim
 
 ## 6.1-Importance of Feature Selection
 
-![image](/chapter-6/3.png)
+![image](/chapter-6/3.webp)
 
 Feature selection ensures that only **meaningful attributes** are used to build predictive models. Too **many irrelevant** or **redundant features** can lead to the **curse of dimensionality**
 
@@ -45,7 +45,7 @@ Feature selection ensures that only **meaningful attributes** are used to build 
 
 ### Filter Methods
 
-![image](/chapter-6/4.png)
+![image](/chapter-6/4.webp)
 
 >  rely on statistical measures to rank and select features independently, They are **fast**, **scalable**, and **easy to interpret**
 
@@ -54,7 +54,7 @@ Feature selection ensures that only **meaningful attributes** are used to build 
 - **Chi-Square Test:** Evaluates dependency between categorical features and target variable.
 - **Mutual Information:** Measures non-linear relationships between features and target
 
-![image](/chapter-6/5.png)
+![image](/chapter-6/5.webp)
 
 - **preferred:** Features with high correlation with the target 
 - **redundant:** highly correlated features among themselves
@@ -62,7 +62,7 @@ Feature selection ensures that only **meaningful attributes** are used to build 
 ---
 ### Wrapper and Embedded Methods 
 
-![image](/chapter-6/6.png)
+![image](/chapter-6/6.webp)
 
 **How Wrapper Methods work:**
 1. Evaluate subsets of features using a machine learning models 
@@ -75,7 +75,7 @@ Feature selection ensures that only **meaningful attributes** are used to build 
 - **Forward Selection:** Starts with no features and adds one at a time based on performance.
 - **Backward Elimination:** Starts with all features and removes one at a time.
 
-![image](/chapter-6/7.png)
+![image](/chapter-6/7.webp)
 
 Features ranked 1 are the most important; higher ranks indicate less relevance.
 
@@ -89,12 +89,12 @@ Features ranked 1 are the most important; higher ranks indicate less relevance.
 - **Lasso Regression (`L1 Regularization`):** Shrinks coefficients of less important features to zero.
 - **Decision Tree-based Models:** Compute feature importance during training (`Random Forest`,`XGBoost`)
 
-![image](/chapter-6/8.png)
+![image](/chapter-6/8.webp)
 Features with coefficients close to zero are less influential and can be discarded.
 
 ## 6.3-Dimensionality Reduction 
 
-![image](/chapter-6/9.png)
+![image](/chapter-6/9.webp)
 
 > Dimensionality reduction transforms the feature space into a **smaller set** of new features that **retain most of the original information**, in the other hand **feature selection** works by removing features 
 
@@ -102,7 +102,7 @@ Features with coefficients close to zero are less influential and can be discard
 
 ### 6.3.1-Principal Component Analysis (PCA)
 
-![image](/chapter-6/10.png)
+![image](/chapter-6/10.webp)
 
 `PCA` is **unsupervised** and does not consider target labels.
 
@@ -130,7 +130,7 @@ These are **new axes (principal component)**, not the original features.
 
 ### 6.3.2-Linear Discriminant Analysis (LDA)
 
-![image](/chapter-6/11.png)
+![image](/chapter-6/11.webp)
 
 `LDA` is a **supervised** dimensionality reduction method seeks to **maximize class separability** by **projecting data onto a lower-dimensional space**.
 
@@ -140,7 +140,7 @@ These are **new axes (principal component)**, not the original features.
  
 ### 6.3.3-t-distributed Stochastic Neighbor Embedding(t-SNE)
 
-![image](/chapter-6/12.png)
+![image](/chapter-6/12.webp)
 
 > non-linear technique for reducing high-dimensional data to 2D or 3D for visualization
 
@@ -151,7 +151,7 @@ Predictive modeling.
 
 ## 6.4-Comparing Feature Selection and Dimensionality Reduction
 
-![image](/chapter-6/13.png)
+![image](/chapter-6/13.webp)
 
 Use Feature Selection when **interpretability is important** 
 Use dimensionality reduction When dataset is very high-dimensional (too many features)
@@ -166,7 +166,7 @@ Use dimensionality reduction When dataset is very high-dimensional (too many fea
 
 ## 6.6-Case Study (both techniques )
 
-![image](/chapter-6/14.png)
+![image](/chapter-6/14.webp)
 
 1. **Filter method:** Remove features with low correlation with the target.
 2. **Wrapper method:** Apply `RFE` with a **random forest classifier** to select the top 30 features.

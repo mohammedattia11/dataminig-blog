@@ -2,7 +2,7 @@
 title: "01-Foundations of Data Mining"
 category: "data-mining"
 date: "12-23-2025"
-background_image: "/chapter-1/11.png"
+background_image: "/chapter-1/11.webp"
 tags: ["Data Mining","ML","DL"]
 description: "This chapter provides a comprehensive foundational overview of three interconnected fields: Data Mining, Machine Learning (ML), and Deep Learning (DL), distinguishing their roles in processing data and generating insights"
 readTime: "18 min read"
@@ -65,7 +65,7 @@ Statistical approaches focus on testing hypotheses, but **data mining emphasizes
 
 Data mining has applications in retail, healthcare, finance, and social network analysis.
 
-![image](/chapter-1/1.png)
+![image](/chapter-1/1.webp)
 
 
 
@@ -121,7 +121,7 @@ $$y = mx + b$$
 * $b$ → Intercept (where the line starts on the y-axis)
 * $x$ → Input
 
-![iamge](/chapter-1/2.png)
+![iamge](/chapter-1/2.webp)
 
 
 
@@ -150,7 +150,7 @@ $$y = mx + b$$
 
 ### 3.2 Theoretical Background
 
-![iamge](/chapter-1/3.png)
+![iamge](/chapter-1/3.webp)
 
 * **Neuron Model:** Computes a weighted sum of inputs and applies an *activation function*
 
@@ -171,7 +171,7 @@ $$y = mx + b$$
 
 ### 3.3 Simple Neural Network
 
-![iamge](/chapter-1/4.png)
+![iamge](/chapter-1/4.webp)
 
 Applied to a binary classification problem, such as predicting whether a customer will purchase a product.
 
@@ -188,7 +188,7 @@ Applied to a binary classification problem, such as predicting whether a custome
 
 ## 04-Data Mining vs ML vs DL
 
-![iamge](/chapter-1/5.png)
+![iamge](/chapter-1/5.webp)
 
 * **Data Mining:** Extracts patterns and insights
 * **Machine Learning:** Predicts outcomes
@@ -200,7 +200,7 @@ Applied to a binary classification problem, such as predicting whether a custome
 
 We combine all three to create a powerful workflow for data-driven systems.
 
-![iamge](/chapter-1/13.png)
+![iamge](/chapter-1/13.webp)
 
 1. **Data Collection (ALL):** Aggregate structured and unstructured datasets
 2. **Data Cleaning and Preprocessing (ALL):** Handle missing values, normalize features
@@ -213,7 +213,7 @@ We combine all three to create a powerful workflow for data-driven systems.
 
 ## Summary
 
-![iamge](/chapter-1/6.png)
+![iamge](/chapter-1/6.webp)
 
 * **Data Mining:** Uncovers hidden patterns and associations
 * **Machine Learning:** Builds predictive models
@@ -263,26 +263,26 @@ We combine all three to create a powerful workflow for data-driven systems.
 
 ### 02-Linear Regression (Slope & Intercept)
 
-![iamge](/chapter-1/7.png)
+![iamge](/chapter-1/7.webp)
 
 * **Slope:** Rate of change of the dependent variable
 * **Intercept:** Starting value on the y-axis
 
 ### 03-Compare ML Types
 
-![iamge](/chapter-1/8.png)
+![iamge](/chapter-1/8.webp)
 
 ### 04-Association Rules Metrics
 
-![iamge](/chapter-1/9.png)
+![iamge](/chapter-1/9.webp)
 
-![iamge](/chapter-1/10.png)
+![iamge](/chapter-1/10.webp)
 
-![iamge](/chapter-1/11.png)
+![iamge](/chapter-1/11.webp)
 
 ### 05-Neural Network & Backpropagation
 
-![iamge](/chapter-1/12.png)
+![iamge](/chapter-1/12.webp)
 
 * **Backpropagation:** Adjusts weights to minimize prediction error
 

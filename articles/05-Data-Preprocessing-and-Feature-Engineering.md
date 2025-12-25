@@ -2,12 +2,12 @@
 title: "05-Data Preprocessing and Feature Engineering"
 category: "data-mining"
 date: "12-23-2025"
-background_image: "/chapter-5/3.png"
+background_image: "/chapter-5/3.webp"
 tags: ["ML"]
 description: "This chapter details the critical processes of Data Preprocessing and Feature Engineering, emphasizing the Garbage In, Garbage Out principle—where model quality depends entirely on data quality"
 readTime: "12 min read"
 ---
-![image](/chapter-5/1.png)
+![image](/chapter-5/1.webp)
 
 High quality data is the backbone for accurate and reliable models
 
@@ -17,7 +17,7 @@ Raw datasets from real-world sources are rarely perfect because it contains miss
 
 ## 5.1-Introduction to Data Preprocessing 
 
-![image](/chapter-5/2.png)
+![image](/chapter-5/2.webp)
 
 > **Data Preprocessing :** transforms raw data into a clean, structured, and machine-readable format
 
@@ -33,7 +33,7 @@ Machine learning models learn patterns from data. If the input data is incomplet
 
 ## 5.2-Handling Missing Data 
 
-![image](/chapter-5/3.png)
+![image](/chapter-5/3.webp)
 
 **Why even missing data exist ?**
 System errors, incomplete surveys, or transmission failures.
@@ -50,13 +50,13 @@ Handling missing data prevents biases and ensures models are trained on complete
 	- **Predictive Imputation:*** Use machine learning models to predict missing values.
 ### Python Code
 
-![image](/chapter-5/4.png)
+![image](/chapter-5/4.webp)
 
 ***In categorical values replace its values with Unknown***
 
 ## 5.3-Detecting and Handling Outliers 
 
-![image](/chapter-5/5.png)
+![image](/chapter-5/5.webp)
 
 >  extreme values that differ significantly from the majority of the data 
 
@@ -76,10 +76,10 @@ Because measurement errors, data entry errors, or rare events.
   - **Capping:** Clip extreme values to a threshold.
 ### Python Code 
 
-![image](/chapter-5/6.png)
+![image](/chapter-5/6.webp)
 ## 5.4-Encoding Categorical Variables 
 
-![image](/chapter-5/7.png)
+![image](/chapter-5/7.webp)
 **Why we need encoding?**
 Because many algorithms work only with *numeric data*. Therefore, categorical variables must be converted into *numeric representations*
 
@@ -88,7 +88,7 @@ Because many algorithms work only with *numeric data*. Therefore, categorical va
 	- **One-hot encoding:** Creates a binary column for each category.
 	- **Target Encoding:** Replaces a category with the mean of the target variable
 
-![image](/chapter-5/8.png)
+![image](/chapter-5/8.webp)
 
 ***Label encoding is suitable for ordinal data Since the data has a natural sequence, using numbers like 0, 1, and 2 preserves that relationship The model can learn that "2" (Excellent) is "greater than" "0" (Poor).***
 
@@ -102,23 +102,23 @@ Because many algorithms work only with *numeric data*. Therefore, categorical va
 
 ## 5.5-Feature Scaling and Normalization
 
-![image](/chapter-5/9.png)
+![image](/chapter-5/9.webp)
 
 ***Scaling ensures fair contribution of features and improves model convergence***
 ### Normalization python code 
 
-![image](/chapter-5/10.png)
-![image](/chapter-5/11.png)
+![image](/chapter-5/10.webp)
+![image](/chapter-5/11.webp)
 
 ## 5.6-Feature Engineering
 
-![image](/chapter-5/12.png)
+![image](/chapter-5/12.webp)
 
 ***Feature engineering is about creating a new features that enhance the model accuracy,interpretability,predictive power***
 
 ## 5.7-Handling imbalanced datasets 
 
-![image](/chapter-5/13.png)
+![image](/chapter-5/13.webp)
 ***In classification problems, imbalanced datasets—where one class dominates—can bias models.***
 بمعني ان الموديل يكون متحيز ل class اكتر من الباقي لان وانا بديله ال dataset to train on it اديته data عن ال class ده اكتر من الباقي فهنا بيحصل bias تحيز 
 
@@ -151,7 +151,7 @@ If you want to get the highest grade possible without actually studying, what wo
 
 ## 5.8-Splitting Data into (Training, validation, test sets)
 
-![image](/chapter-5/14.png)
+![image](/chapter-5/14.webp)
 
 ***Proper splitting ensures that model evaluation is unbiased and reflects real-world performance.***
 
@@ -159,36 +159,3 @@ If you want to get the highest grade possible without actually studying, what wo
 - **Without `random_state`:** Every time you click "Run," the computer picks different rows for your training set. This means your model's accuracy might change slightly (e.g., 85% now, 82% later) just because of the luck of the draw.
     
 - **With `random_state=42`:** The computer uses a specific pattern to shuffle. No matter how many times you run it, the "Training" rows and "Testing" rows will be exactly the same.
-<!-- 
-## Summary 
-
-![image](/chapter-5/15.png)
-
-**Data Preprocessing Techniques**
-
-- **Cleaning** and handling missing data using imputation or deletion
-- Detecting and handling **outliers** to avoid biased models.
-- Converting **categorical variables** into numeric formats.
-- Applying **scaling and normalization** to ensure fair feature contributions
-- **Creating new features** via binning, polynomial transformations, or domain knowledge.
-- Addressing **imbalanced datasets** to improve classification performance
-- Splitting datasets into **training**, **validation**, and **test sets** for unbiased evaluation
-
-## Problem Solving
-
-### Given a dataset with missing values in both numerical and categorical columns, describe step by step how you would preprocess the dataset.
-
-
-
----
-### You find extreme values in a dataset of monthly incomes. How would you decide whether to remove, transform, or keep these outliers?
-
-
-
----
-### Explain with an example how feature scaling can affect a K-Nearest Neighbors classifier. Create a Python snippet to encode the categorical variable "City" with values "Cairo, Paris, New York" using one-hot encoding.
-
-
----
-### A dataset has a highly skewed column "Transaction_Amount". Which transformation Technique would you apply and why?
- -->

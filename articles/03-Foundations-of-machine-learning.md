@@ -2,14 +2,14 @@
 title: "03-Foundations of machine learning"
 category: "data-mining"
 date: "12-23-2025"
-background_image: "/chapter-3/7.png"
+background_image: "/chapter-3/7.webp"
 tags: ["ML"]
 description: "This chapter provides a foundational overview of Machine Learning (ML), defining it as a field where systems learn to improve their performance on tasks through experience rather than explicit programming"
 readTime: "20 min read"
 ---
 ## 3.1-Introduction to machine learning
 
-![image](/chapter-3/1.png)
+![image](/chapter-3/1.webp)
 
 > dynamic subfield of Artificial Intelligence (AI) focused on Creating algorithms capable of learning patterns from data without being explicitly programmed.
 
@@ -28,17 +28,17 @@ ML not just about building predictive models—it is about enabling adaptive, in
 
 ## 3.2-Types of machine learning 
 
-![image](/chapter-3/3.png)
+![image](/chapter-3/3.webp)
 ### 2.1-Supervised learning 
 
-![image](/chapter-3/4.png)
+![image](/chapter-3/4.webp)
 
 > learning from labeled data, The goal is to learn a mapping function (f(X)->Y) that predicts the output for Unseen inputs.
 
 - *Classification*
 - *Regression*
 
-![image](/chapter-3/2.png)
+![image](/chapter-3/2.webp)
 
 - **Applications:**
 	- Medical diagnosis
@@ -46,7 +46,7 @@ ML not just about building predictive models—it is about enabling adaptive, in
 	- Customer churn prediction: refers to the situation when a customer stops using a company’s product or service over a certain period of time. In other words, it’s the loss of customers.
 ### 2.2-Unsupervised learning 
 
-![image](/chapter-3/5.png)
+![image](/chapter-3/5.webp)
 
 > works with unlabeled data, aiming to discover hidden structures
 
@@ -62,7 +62,7 @@ Defining meaningful patterns without labeled data is difficult, and evaluation m
 	- Data visualization
 ### 2.3-Reinforcement learning 
 
-![image](/chapter-3/6.png)
+![image](/chapter-3/6.webp)
 
 > inspired by behavioral psychology, agent interacts with an environment, making decisions that maximize cumulative rewards while avoiding penalties
 
@@ -75,7 +75,7 @@ Defining meaningful patterns without labeled data is difficult, and evaluation m
 **Applications:** (Robotics,Autonomous vehicles,Games(`AlphaGo`,`OpenAI Five`))
 ## 3.3-Core Components of a Machine Learning System
 
-![image](/chapter-3/7.png)
+![image](/chapter-3/7.webp)
 
 **well-designed ML system requires high-quality data, thoughtful feature engineering, robust models, and continuous monitoring post-deployment**
 
@@ -90,14 +90,14 @@ Defining meaningful patterns without labeled data is difficult, and evaluation m
 6. **Deployment:** Integrating the trained model into production environments
 ## 3.4-The Bias-Variance Trade-off
 
-![image](/chapter-3/8.png)
+![image](/chapter-3/8.webp)
 > describes the relationship between model complexity and generalization ability.
 
 **Bias:** Error due to overly simplistic assumptions, High bias causes `underfitting`, where The model cannot capture underlying patterns.
 
 **Variance:** Error due to sensitivity to training data fluctuations,High variance causes `overfitting`, where the model memorizes training data instead of generalizing
 
-![image](/chapter-3/9.png)
+![image](/chapter-3/9.webp)
 
 goal is to find the sweet spot, where the model captures essential patterns without
 `Overfitting` noise.
@@ -107,11 +107,11 @@ goal is to find the sweet spot, where the model captures essential patterns with
 **A deep neural network trained on limited data may `overfit` (high variance)****
 ## 3.5-Python supervised vs unsupervised
 
-![image](/chapter-3/10.png)
+![image](/chapter-3/10.webp)
 
 ---
 
-![image](/chapter-3/11.png)
+![image](/chapter-3/11.webp)
 
 ### 3.5.1-Supervised Learning: Logistic Regression
 
@@ -119,7 +119,7 @@ goal is to find the sweet spot, where the model captures essential patterns with
 
 ## 3.6-Challenges in Machine Learning
 
-![image](/chapter-3/12.png)
+![image](/chapter-3/12.webp)
 
 1. **Data Quality:** Poor-quality data leads to poor models, solved by applying Data cleaning and preprocessing
 2. **Overfitting and Underfitting:** Striking the right balance between model complexity and generalization is difficult
@@ -132,27 +132,9 @@ goal is to find the sweet spot, where the model captures essential patterns with
 
 ## 3.7-Section 3.7: Applications of Machine Learning 
 
-![image](/chapter-3/14.png)
+![image](/chapter-3/14.webp)
 ## 3.8-Practical Workflow of Machine Learning Projects
 
-![image](/chapter-3/13.png)
+![image](/chapter-3/13.webp)
 
 **ensures reproducible, reliable, and effective ML solutions.**
-
-<!-- ## 3.9-Summary
-
-**Machine Learning enables systems to learn from data without explicit programming.**
-
-**Types: Supervised, unsupervised, and reinforcement learning address different problem settings**
-
-**Core Components: Dataset, features, model, training, evaluation, and deployment are Essential for building ML systems.**
-
-***Bias-Variance Trade-off: Balancing underfitting and overfitting is critical for
-Generalization.**
-
-***Challenges: Data quality, scalability, interpretability, ethics, and dynamic environments**
-
-***Applications: Healthcare, finance, e-commerce, autonomous systems, NLP, and beyond.**
-
-## Problem-Solving
- -->

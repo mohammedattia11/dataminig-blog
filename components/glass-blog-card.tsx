@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { BookOpen, Clock } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 interface GlassBlogCardProps {
@@ -21,7 +22,8 @@ interface GlassBlogCardProps {
   tags?: string[];
   className?: string;
   id: string;
-  description:string
+  description: string;
+  index: number;
 }
 
 const defaultPost = {
@@ -44,23 +46,31 @@ export function GlassBlogCard({
   tags = defaultPost.tags,
   className,
   id,
-  description
+  description,
+  index,
 }: GlassBlogCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
+      transition={{
+        duration: 0.4,
+        delay: index * 0.05,
+        ease: [0.25, 0.1, 0.25, 1],
+      }}
       className={cn("w-full max-w-[400px]", className)}
     >
       <Card className="group relative h-[28rem] overflow-hidden rounded-2xl border-border/50 bg-card/30 backdrop-blur-md transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10">
         {/* Image Section */}
         <Link href={`/${id}`}>
           <div className="relative aspect-[16/9] overflow-hidden">
-            <motion.img
+            <Image
               src={image}
               alt={title}
-              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-40" />
 

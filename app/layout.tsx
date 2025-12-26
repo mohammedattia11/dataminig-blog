@@ -1,10 +1,9 @@
-import { ThemeProvider } from "@/components/theme-provider";
-import LenisProvider from "@/providers/lenis-provider";
+import BackTopButton from "@/components/back-top-button";
+import TubeLightNavbar from "@/components/navbar";
+import { ThemeProvider } from "@/providers/theme-provider";
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
-import TubeLightNavbar from "@/components/navbar";
-import BackTopButton from "@/components/back-top-button";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,7 +21,8 @@ export const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Data minig blog",
-  description: "This blog covers the main parts included in the book,questions answers and summary for each chapter",
+  description:
+    "This blog covers the main parts included in the book,questions answers and summary for each chapter",
 };
 
 export default function RootLayout({
@@ -53,9 +53,9 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              <TubeLightNavbar/>
-              <LenisProvider>{children}</LenisProvider>
-              <BackTopButton/>
+              <TubeLightNavbar />
+              {children}
+              <BackTopButton />
             </ThemeProvider>
           </main>
         </div>

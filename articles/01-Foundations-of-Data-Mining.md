@@ -13,7 +13,8 @@ readTime: "18 min read"
 
 > Process of discovering valuable knowledge from large datasets
 
-Statistical approaches focus on testing hypotheses, but **data mining emphasizes exploration and pattern discovery**.
+- **Statistical approaches:** focus on testing hypotheses
+- **Data mining:** emphasizes exploration and pattern discovery.
 
 * *Primary goal is to uncover meaningful patterns that can*:
 
@@ -114,22 +115,18 @@ Machine Learning algorithms *identify patterns*, *generalize them*, and make *pr
 
 > One of the simplest ML algorithms for predicting continuous outcomes
 
-$$y = mx + b$$
-
-* $y$ → Predicted variable
-* $m$ → Slope
-* $b$ → Intercept (where the line starts on the y-axis)
-* $x$ → Input
+- `y = mx + b`
+  * `y` → Predicted variable
+  * `m` → Slope
+  * `b` → Intercept (where the line starts on the y-axis)
+  * `x` → Input
 
 ![iamge](/chapter-1/2.webp)
-
-
 
 ## 03-Deep Learning – The Neural Revolution
 
 ### 3.1 Definition
 
-> [!info]
 > Subfield of ML that models data using multi-layered artificial neural networks
 
 **Excels in high-dimensional, unstructured data**, such as images, text, and audio.
@@ -160,7 +157,7 @@ $$y = mx + b$$
 
 * **Backpropagation:** Training algorithm that adjusts weights to reduce prediction error
 
-  * $New\ weight = Old\ weight − learning\ rate × gradient$
+  * `New weight` = `Old weight` − `learning rate × gradient`
   * Workflow:
 
     * **Forward pass** → **Loss calculation** → **Backward pass** → **Weight update**

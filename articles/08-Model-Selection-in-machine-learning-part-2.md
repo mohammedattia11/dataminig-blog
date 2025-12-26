@@ -1,5 +1,5 @@
 ---
-title: "7.1-Model Selection in ML part-2"
+title: "7.1-Model Selection in Machine Learning part-2"
 category: "data-mining"
 date: "12-23-2025"
 background_image: "/chapter-7-part-2/5.webp"

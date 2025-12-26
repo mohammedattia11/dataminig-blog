@@ -1,7 +1,9 @@
+import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import BackTopButton from "@/components/back-top-button";
 import TubeLightNavbar from "@/components/navbar";
 import { ThemeProvider } from "@/providers/theme-provider";
-import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -59,6 +61,8 @@ export default function RootLayout({
             </ThemeProvider>
           </main>
         </div>
+        <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );

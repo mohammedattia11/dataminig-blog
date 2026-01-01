@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${playfair.variable} ${poppins.variable} antialiased `}>
         <div className="min-h-dvh w-full relative bg-black overflow-y-scroll">
           <div

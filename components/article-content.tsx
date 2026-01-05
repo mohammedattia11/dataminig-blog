@@ -14,7 +14,6 @@ export default function ArticleContent({ htmlContent }: Props) {
 
   const handleContentClick = (e: React.MouseEvent<HTMLElement>) => {
     const target = e.target as HTMLElement;
-    console.log(target)
 
     if (target.tagName === "IMG") {
       const img = target as HTMLImageElement;

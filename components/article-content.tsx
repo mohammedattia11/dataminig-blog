@@ -26,19 +26,18 @@ export default function ArticleContent({ htmlContent }: Props) {
   };
 
   useEffect(() => {
+    if (!isOpen) return;
     document.addEventListener("keydown", e => {
-      if (isOpen) {
         if (e.key === "Escape") {
           setIsOpen(false);
         }
-      }
     });
     return () =>
       document.removeEventListener("keydown", e => {
-        if (isOpen) {
-          console.log(e.key);
+        if (e.key === "Escape") {
+          setIsOpen(false);
         }
-      });
+    });
   }, [currentImgSrc, isOpen]);
 
   return (

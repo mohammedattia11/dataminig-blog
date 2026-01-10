@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Props = {
   htmlContent: string;
 };
 
 export default function ArticleContent({ htmlContent }: Props) {
+  const articleRef = useRef<HTMLElement>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [currentImgSrc, setCurrentImgSrc] = useState("");
 
@@ -26,24 +27,36 @@ export default function ArticleContent({ htmlContent }: Props) {
   };
 
   useEffect(() => {
+    if (!articleRef.current) return;
+
+    const images = articleRef.current.querySelectorAll("img");
+
+    images.forEach(img => {
+      img.setAttribute("loading", "lazy");
+      img.setAttribute("decoding", "async");
+    });
+  }, [htmlContent]);
+
+  useEffect(() => {
     if (!isOpen) return;
     document.addEventListener("keydown", e => {
-        if (e.key === "Escape") {
-          setIsOpen(false);
-        }
+      if (e.key === "Escape") {
+        setIsOpen(false);
+      }
     });
     return () =>
       document.removeEventListener("keydown", e => {
         if (e.key === "Escape") {
           setIsOpen(false);
         }
-    });
+      });
   }, [currentImgSrc, isOpen]);
 
   return (
     <>
       <article
-        className="prose prose-zinc prose-headings:text-pink-500 prose-headings:text-lg prose-blockquote:text-sm prose-p:text-zinc-200 prose-p:text-sm prose-li:text-sm prose-strong:text-sm sm:prose-p:text-base sm:prose-li:text-base sm:prose-strong:text-base prose-li:text-zinc-200 prose-code:text-pink-200 prose-strong:text-pink-300 prose-img:rounded-xl md:prose-p:text-lg md:prose-li:text-lg md:prose-headings:text-xl"
+        ref={articleRef}
+        className="prose prose-zinc prose-headings:text-pink-500 prose-headings:text-lg prose-blockquote:text-sm prose-p:text-zinc-200 prose-p:text-sm prose-li:text-sm prose-strong:text-sm sm:prose-p:text-base sm:prose-li:text-base sm:prose-strong:text-base prose-li:text-zinc-200 prose-code:text-pink-200 prose-strong:text-pink-300 prose-img:[content-visibility:auto] prose-img:rounded-xl md:prose-p:text-lg md:prose-li:text-lg md:prose-headings:text-xl"
         dangerouslySetInnerHTML={{ __html: htmlContent }}
         onClick={handleContentClick}
       />

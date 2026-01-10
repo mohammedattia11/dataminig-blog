@@ -1,7 +1,6 @@
 ---
 title: "04-Data Exploration and Preprocessing"
 category: "data-mining"
-date: "12-25-2025"
 background_image: "/chapter-4/1.webp"
 tags: ["ML"]
 description: "This chapter guides to the essential steps required before applying machine learning algorithms"

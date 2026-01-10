@@ -1,7 +1,6 @@
 ---
 title: "08-Model Evaluation and Validation"
 category: "data-mining"
-date: "12-23-2025"
 background_image: "/chapter-8/1.webp"
 tags: ["ML"]
 description: "This chapter guides you through the critical process of choosing the most appropriate algorithm to ensure models generalize well to unseen data rather than just memorizing training sets"

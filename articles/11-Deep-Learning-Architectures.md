@@ -1,7 +1,6 @@
 ---
 title: "10-Deep Learning Architectures"
 category: "data-mining"
-date: "12-25-2025"
 background_image: "/chapter-10/1.webp"
 tags: ["DL"]
 description: "This chapter explores the specialized neural network structures designed to automatically learn complex, hierarchical representations from raw data, eliminating the need for manual feature engineering"

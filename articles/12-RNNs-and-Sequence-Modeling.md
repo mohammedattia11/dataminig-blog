@@ -1,7 +1,6 @@
 ---
 title: "11-RNNs and Sequence Modeling"
 category: "data-mining"
-date: "12-25-2025"
 background_image: "/chapter-11/1.webp"
 tags: ["DL"]
 description: "This chapter explores a class of deep learning models designed specifically to handle sequential data, where the order of information is critical (such as text, audio, or time-series financial data)"

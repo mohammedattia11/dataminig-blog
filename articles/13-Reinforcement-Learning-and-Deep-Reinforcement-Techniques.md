@@ -1,7 +1,6 @@
 ---
 title: "16-Reinforcement Learning and Deep Reinforcement Techniques"
 category: "data-mining"
-date: "12-25-2025"
 background_image: "/chapter-16/1.webp"
 tags: ["ML","DL"]
 description: "This chapter explores a dynamic branch of machine learning focused on how an agent learns to take optimal actions within an environment to maximize a cumulative reward"

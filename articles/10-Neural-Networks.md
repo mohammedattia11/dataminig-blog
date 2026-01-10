@@ -1,7 +1,6 @@
 ---
 title: "09-Neural Networks"
 category: "data-mining"
-date: "12-23-2025"
 background_image: "/chapter-9/4.webp"
 tags: ["DL"]
 description: "This chapter provides a comprehensive overview of the systems that serve as the foundation of Deep Learning, inspired by the structure of the human brain to process complex information"

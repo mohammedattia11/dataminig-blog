@@ -3,7 +3,6 @@ import matter from "gray-matter"
 import path from "node:path"
 import { remark } from "remark"
 import html from "remark-html"
-import moment from "moment"
 import type { ArticleType } from "@/types"
 
 const articlesDirectory = path.join(process.cwd(),"articles")
@@ -12,6 +11,8 @@ export function getSortedArticles():ArticleType[] {
   const filenames = fs.readdirSync(articlesDirectory);
   const allArticlesData = filenames.map(filename => {
     const id = filename.replace(/\.md$/,"");
+
+    const order = Number(id.split("-")[0]);
     
     const fullPath = path.join(articlesDirectory,filename);
     const fileContents = fs.readFileSync(fullPath,"utf-8");
@@ -20,6 +21,7 @@ export function getSortedArticles():ArticleType[] {
 
     return {
       id,
+      order,
       title:matterResults.data.title,
       date:matterResults.data.date,
       category:matterResults.data.category,
@@ -30,14 +32,7 @@ export function getSortedArticles():ArticleType[] {
       readTime:matterResults.data.readTime,
     }
   })
-  return allArticlesData.sort((a,b) => {
-    const format = "DD-MM-YYYY";
-    const dateOne = moment(a.date,format);
-    const dateTwo = moment(b.date,format);
-    if (dateOne.isBefore(dateTwo)) return -1;
-    else if(dateTwo.isAfter(dateOne)) return 1;
-    else return 0;
-  })
+  return allArticlesData.sort((a, b) => a.order - b.order);
 }
 
 export async function getArticleData(id:string) {
@@ -56,6 +51,5 @@ export async function getArticleData(id:string) {
     htmlContent,
     title:matterResult.data.title,
     category:matterResult.data.category,
-    date:moment(matterResult.data.date,"DD-MM-YYYY").format("MMMM Do YYYY")
   }
 }

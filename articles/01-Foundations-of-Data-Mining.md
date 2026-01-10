@@ -1,7 +1,6 @@
 ---
 title: "01-Foundations of Data Mining"
 category: "data-mining"
-date: "12-23-2025"
 background_image: "/chapter-1/11.webp"
 tags: ["Data Mining","ML","DL"]
 description: "This chapter provides a comprehensive foundational overview of three interconnected fields: Data Mining, Machine Learning (ML), and Deep Learning (DL), distinguishing their roles in processing data and generating insights"

@@ -1,7 +1,6 @@
 ---
 title: "06-Feature Selection and Dimensionality Reduction"
 category: "data-mining"
-date: "12-23-2025"
 background_image: "/chapter-6/1.webp"
 tags: ["ML"]
 description: "This chapter addresses the challenges associated with high-dimensional datasets, such as the risk of overfitting, increased computational costs"

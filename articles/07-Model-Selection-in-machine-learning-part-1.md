@@ -1,7 +1,6 @@
 ---
 title: "07-Model Selection in Machine Learning part-1"
 category: "data-mining"
-date: "12-23-2025"
 background_image: "/chapter-7-part-1/1.webp"
 tags: ["ML","DL"]
 description: "This chapter guides you through the critical process of choosing the most appropriate algorithm to ensure models generalize well to unseen data rather than just memorizing training sets"

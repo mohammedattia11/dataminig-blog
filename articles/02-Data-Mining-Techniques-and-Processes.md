@@ -1,7 +1,6 @@
 ---
 title: "02-Data Mining Techniques and Processes"
 category: "data-mining"
-date: "12-23-2025"
 background_image: "/chapter-2/13.webp"
 tags: ["Data Mining"]
 description: "This chapter examines Data Mining and the KDD process, detailing core techniques like classification, clustering, and association rules to extract actionable insights from complex datasets"

@@ -1,7 +1,6 @@
 ---
 title: "7.1-Model Selection in Machine Learning part-2"
 category: "data-mining"
-date: "12-23-2025"
 background_image: "/chapter-7-part-2/5.webp"
 tags: ["ML","DL"]
 description: "This chapter focuses on ensuring that machine learning models generalize effectively to new, unseen data rather than simply memorizing their training sets"

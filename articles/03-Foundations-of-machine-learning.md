@@ -1,7 +1,6 @@
 ---
 title: "03-Foundations of machine learning"
 category: "data-mining"
-date: "12-23-2025"
 background_image: "/chapter-3/7.webp"
 tags: ["ML"]
 description: "This chapter provides a foundational overview of Machine Learning (ML), defining it as a field where systems learn to improve their performance on tasks through experience rather than explicit programming"
